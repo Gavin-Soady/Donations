@@ -79,7 +79,7 @@ const Accounts = {
       failAction: function (request, h, error) {
         return h
           .view("login", {
-            title: "login error",
+            title: "Sign in error",
             errors: error.details,
           })
           .takeover()
